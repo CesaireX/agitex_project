@@ -1,9 +1,5 @@
-FROM adoptopenjdk:11-jre-hotspot
-
-COPY target/agitex-0.0.1-SNAPSHOT.jar /app/agitex-app.jar
-
-WORKDIR /app
-
+FROM openjdk:11
+VOLUME /tmp
 EXPOSE 8080
-
-CMD ["java", "-jar", "agitex-app.jar"]
+COPY target/agitex-0.0.1-SNAPSHOT.jar agitex.jar
+ENTRYPOINT ["java","-jar","/agitex.jar"]

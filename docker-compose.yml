@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  my-postgres-container2:
+    image: postgres
+    container_name: my-postgres-container2
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=AdoCes23
+      - POSTGRES_DB=agitex
+    ports:
+      - '5431:5431'
+
+  recipe:
+    container_name: agitex
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8080'
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://my-postgres-container2/agitex
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=AdoCes23
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    depends_on:
+      - my-postgres-container2
+ 
