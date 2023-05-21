@@ -1,0 +1,3 @@
+Ouedraogo,ismael,19,comptable,38000
+Tankoano,Patric,30,Mecanicien,38000
+Ouedraogo,Amira,20,comptable,38000

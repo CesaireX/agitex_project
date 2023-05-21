@@ -1,0 +1,16 @@
+<clients>
+    <client>
+        <nom>Tassembedo</nom>
+        <prenom>Pascal</prenom>
+        <age>35</age>
+        <profession>Mecanicien</profession>
+        <revenu>150.0</revenu>
+    </client>
+    <client>
+        <nom>Tassembedo2</nom>
+        <prenom>Pascal2</prenom>
+        <age>35</age>
+        <profession>Mecanicien</profession>
+        <revenu>160.0</revenu>
+    </client>
+</clients>

@@ -1,0 +1,23 @@
+[
+ {
+        "nom": "Ouedraogo",
+        "prenom": "Pascal",
+        "age": 18,
+        "profession": "Professeur",
+        "revenu": 500000
+    },
+    {
+        "nom": "Tankoano",
+        "prenom": "abdoul",
+        "age": 20,
+        "profession": "developpeur",
+        "revenu": 300000
+    },
+    {
+        "nom": "Posbila",
+        "prenom": "Paris",
+        "age": 20,
+        "profession": "Chanteur",
+        "revenu": 300000
+    }
+]
