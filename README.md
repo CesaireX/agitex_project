@@ -11,9 +11,14 @@ projet pour un test d'essai à agitex
 1. Clonez le référentiel Git.
 2. run * mvn package -DskipTests * a la racine du projet pour creer le jar
 2. Build et exécutez l'application Docker en utilisant la commande suivante :
+             
+             ---Le build du projet
 
-  $ docker build . -t agitex:v1     ------Pour le build du projet
-  $ docker-compose up               ------Pour l'excecution du projet 
+  $ docker build . -t agitex:v1 
+  
+            ---L'execution du projet
+
+  $ docker-compose up 
 
 ## TESTS
  Pour la phase de test concernant la création des clients a travers les fichiers, certains fichiers ont été déja créer et integrer afin de permettre un test rapide sans pour autant etre obliger de saisir encore des fichiers d'essais
